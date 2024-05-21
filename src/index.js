@@ -2,8 +2,13 @@ const express = require('express');
 const morgan = require('morgan');
 const route = require('./routes/index');
 
+// Config env
+require('dotenv').config()
+
 const app = express();
-const port = 3000;
+
+// HTTP logger
+app.use(morgan('combined'))
 
 app.use(
     express.urlencoded({
@@ -19,8 +24,9 @@ app.get('/', (req,res) => {
 route(app);
 
 
-app.listen(port, () =>
-    console.log(`App listening at http://localhost:${port}`),
+const PORT = process.env.PORT || 8888
+app.listen(PORT, () =>
+    console.log(`App listening at http://localhost:${PORT}`)
 );
 
 

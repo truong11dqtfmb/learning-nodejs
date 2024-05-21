@@ -1,0 +1,36 @@
+Init project:
+    npm init -y
+
+Install libary:
+    npm i express dotenv cors nodemon
+
+    npm i nodemon --save-dev   (chỉ ở môi trường dev dùng)
+
+require: nạp thư viện(di libary)
+
+Route:
+    app.METHODH(PATH, HANDLER)
+
+Get param: http://localhost/search?param=123
+    req.query.{param}
+
+Post request body: http://localhost/user/create
+    req.body.{param}
+
+Get path variabled: http://localhost/user/1
+    req.params.{param}
+    
+
+Thư viện cần dùng:
+    express     : api
+    nodemon     : restart code & debug
+    morgan      : log api
+
+
+
+
+
+
+
+
+
