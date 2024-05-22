@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "truongdq",
+    "password": "123456",
+    "database": "db-security",
+    "host": "10.1.40.172",
+    "port": 5436,
+    "dialect": "postgres",
+    "logging": false,
+    "timezone": "+07:00"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
